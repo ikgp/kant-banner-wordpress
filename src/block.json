@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "waldbaur/kant-banner",
+	"version": "0.1.0",
+	"title": "Banner",
+	"category": "widgets",
+	"icon": "megaphone",
+	"description": "Banner mit scrollendem Text.",
+	"example": {},
+	"supports": {
+		"color": {
+			"background": true,
+			"text": true
+		},
+		"html": false,
+		"typography": {
+			"fontSize": true
+		},
+		"spacing": {
+			"padding": true
+		}
+	},
+	"attributes": {
+		"content": {
+			"type": "string"
+		},
+		"durationSeconds": {
+			"type": "number",
+			"default": 15
+		}
+	},
+	"textdomain": "kant-banner",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
